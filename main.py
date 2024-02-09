@@ -1,7 +1,7 @@
 import os
 import time
 import playsound
-import speech_recognition as sr 
+import Speech_Recognition as sr 
 from gtts import gTTS
 
 def speak(text):

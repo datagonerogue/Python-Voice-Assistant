@@ -2,4 +2,3 @@ playsound
 SpeechRecognition
 gTTS
 PyAudio
-pygobject
