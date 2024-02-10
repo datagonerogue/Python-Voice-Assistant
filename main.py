@@ -17,7 +17,7 @@ def get_audio():
         said=""
 
         try:
-            said = r.recognize_amazon(audio)
+            said = r.recognize_google(audio)
             print(said)
         except Exception as e:
             print("Exception: " + str(e))
