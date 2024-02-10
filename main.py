@@ -6,14 +6,14 @@ import playsound
 import speech_recognition as sr 
 from gtts import gTTS
 
+# Generating Directory
 SPEECH_DIR = "Generated Speech"
-
 if not os.path.exists(SPEECH_DIR):
     os.makedirs(SPEECH_DIR)
-
 for file in glob.glob(os.path.join(SPEECH_DIR, "*.mp3")):
     os.remove(file)
     
+# Speak Function
 def speak(text):
     now = datetime.datetime.now()
     formatted_time = now.strftime("%H-%M-%S")
@@ -23,31 +23,28 @@ def speak(text):
     tts.save(filename)
     print("rA9: " + text)
     playsound.playsound(filename)
-
     
+# Input Function
 def get_audio():
     print("Listening...")
     r = sr.Recognizer()
     with sr.Microphone() as source:
         audio = r.listen(source)
         said=""
-
         try:
             said = r.recognize_google(audio)
             print("You: " + said)
         except sr.UnknownValueError:
             speak("Sorry, I am not able to hear you.")
         except Exception as e:
-            speak("An Exception has occured")
+            speak("An Exception has occurred")
             print("Exception: " + str(e))
-            
-
     return said
 
-speak("Hello, I am your virtual assistant. How can I help you?")
 
+# Main Logic
+speak("Hello, I am your virtual assistant. How can I help you?")
 while True:
-    
     audio=get_audio()
     if "hello" in audio:
         speak("Hello, is there anything i can help you with?")
