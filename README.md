@@ -21,41 +21,10 @@ git clone https://github.com/datagonerogue/Python-Voice-Assistant.git
 
 2. Install dependencies
 
-```bash
-pip install -r requirements.txt
-```
-
-You need to install PyAudio separately:-
-
-For Windows:
-
-1. Open Command Prompt as Administrator.
-2. Run the following command:
-
-```
-python -m pip install pyaudio
-
-```
-
-For macOS:
-
-1. Install the prerequisite portaudio library using Homebrew:
-
-```
-brew install portaudio
-```
-
-2. After portaudio is installed, install PyAudio using pip:
-
-```
-pip install pyaudio
-```
-
-For GNU/Linux (Debian-based systems):
-
-```
-sudo apt install python3-pyaudio
-```
+- playsound
+- SpeechRecognition
+- gTTS
+- PyAudio
 
 3. Run the assistant
 
