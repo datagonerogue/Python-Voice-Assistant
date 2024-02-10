@@ -21,7 +21,7 @@ git clone https://github.com/datagonerogue/Python-Voice-Assistant.git
 
 2. Install dependencies
 
-- playsound
+- playsound==1.2.2
 - SpeechRecognition
 - gTTS
 - PyAudio
