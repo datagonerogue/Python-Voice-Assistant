@@ -21,7 +21,7 @@ def speak(text):
     filename = os.path.join(SPEECH_DIR, f"Speech_{formatted_time}.mp3")
     tts = gTTS(text=text, tld='us', lang="en", slow=False)
     tts.save(filename)
-    print("rA9: " + text)
+    print("Sara: " + text)
     playsound.playsound(filename)
     
 # Input Function
@@ -49,7 +49,7 @@ while True:
     if "hello" in audio:
         speak("Hello, is there anything i can help you with?")
     elif "your name" in audio:
-        speak("My name is r A 9")
+        speak("My name is Sara")
     elif audio=="":
         continue
     elif audio=="that's it":
