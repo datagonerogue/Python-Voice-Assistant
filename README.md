@@ -6,7 +6,7 @@ This Python Voice Assistant is a project aimed at creating a personalized virtua
 
 ## Features
 
-- [ ] Speech Recognition and Text-to-Speech Conversion
+- [x] Speech Recognition and Text-to-Speech Conversion
 - [ ] Task Execution
 - [ ] User Interface
 - [ ] Natural Language Processing
