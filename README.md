@@ -8,8 +8,20 @@ This Python Voice Assistant is a project aimed at creating a personalized virtua
 
 - [x] Speech Recognition and Text-to-Speech Conversion
 - [ ] Task Execution
-- [ ] User Interface
-- [ ] Natural Language Processing
+
+  1. [ ] Note Taking
+
+  2. [ ] Date & Time
+
+  3. [ ] Weather Report
+
+  4. [ ] Application Management
+
+  5. [ ] News Updates
+
+  6. [ ] Music Playback
+
+  7. [ ] Book Recomendation
 
 ## Getting Started
 
